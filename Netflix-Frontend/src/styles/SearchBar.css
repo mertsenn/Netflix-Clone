@@ -1,0 +1,31 @@
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.search-input {
+    padding: 8px 12px; /* İçerik kenar boşlukları */
+    color: #ffffff; /* Yazı rengi */
+    font-size: 1em; /* Yazı boyutu */
+    background-color: #141414; /* Arka plan rengi */
+    border: 1px solid #333; /* Kenar rengi */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    outline: none; /* Varsayılan mavi kenarı kaldır */
+}
+
+.search-input:focus {
+    background-color: #222; /* Odaklandığında arka plan rengi */
+    border-color: #555; /* Odaklandığında kenar rengi */
+    opacity: 1; /* Tam görünürlük */
+}
+
+.search-input::placeholder {
+    color: #888; /* Placeholder rengi */
+    font-style: italic; /* Placeholder yazı stili */
+}
+
+.search-input:hover {
+    border-color: #666; /* Hover sırasında kenar rengi */
+}

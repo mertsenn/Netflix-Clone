@@ -1,0 +1,43 @@
+.search-page-container {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Sonuçları içeren container, öğeler wrap olacak şekilde ayarlandı */
+.results-list {
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  /* Öğelerin alt satıra geçmesine izin ver */
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;       /* Öğeler arasına boşluk ekleyin */
+  color: white
+}
+
+/* Her bir sonuç öğesi için sabit genişlik ayarlandı */
+.result-item {
+  /* Örneğin her öğe 300px genişliğinde olsun */
+  width: 300px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+/* Poster ayarları */
+.result-poster {
+  width: 100%; /* Öğenin genişliğine uyum sağlar */
+  height: auto;
+  object-fit: cover;
+  margin-top: 50px;
+  transition: transform 0.2s;
+}
+
+.result-poster:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}

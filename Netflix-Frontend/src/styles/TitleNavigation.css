@@ -1,0 +1,139 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0));
+}
+.nav-container-active {
+  background-color: rgb(20, 20, 20);
+  transition: background-color 0.5s ease;
+}
+.nav-left-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  list-style-type: none;
+}
+.nav-links li a {
+  flex-direction: column;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+  transition: color 0.3s;
+  align-items: baseline;
+}
+.nav-links li {
+  padding-top: 5px;
+}
+.nav-links li a:hover {
+  color: #ffffff99;
+}
+.netflix-logo {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(229, 9, 20);
+  cursor: pointer;
+  display: block;
+  font-family: nf-icon;
+  font-size: 25px;
+  font-weight: 400;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 25px;
+  margin-left: 50px;
+  text-decoration-color: rgb(229, 9, 20);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-size-adjust: 100%;
+  user-select: none;
+  width: 92.5px;
+}
+
+.netflix-avatar {
+  font-size: 12px;
+  height: 32px;
+  line-height: 14.4px;
+  text-size-adjust: 100%;
+  unicode-bidi: isolate;
+  user-select: none;
+  width: 32px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.nav-right-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.nav-right-container-active .search-button-white {
+  transition: transform 0.5s ease;
+  transform: translateX(-250px);
+}
+
+.nav-right-container-active .search-input {
+  visibility: visible; /* Görünür yap */
+  opacity: 1; /* Şeffaflığı kaldır */
+  transition: opacity 0.5s ease, width 0.5s ease; /* Akıcı geçiş */
+}
+
+.nav-right-container-active {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.search-button-white {
+  margin-right: 20px;
+  height: 30px;
+  width: auto;
+}
+
+.nav-right-container-active .search-bar-container {
+  visibility: visible; /* Görünür yap */
+  opacity: 1; /* Şeffaflığı kaldır */
+  transition: opacity 0.5s ease, width 0.5s ease; /* Akıcı geçiş */
+  width: 200px; /* Genişlik animasyonu */
+}
+
+.search-bar-container {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-fade-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Alt gradyan boyutu */
+  background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37,37,37, 0.61),
+      #111
+  );
+  z-index: 1;
+}

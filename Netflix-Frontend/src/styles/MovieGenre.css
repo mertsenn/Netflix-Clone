@@ -1,0 +1,13 @@
+.movie-genres {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.genre-list {
+  list-style: none;  /* Nokta işaretlerini de kaldırır */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px; /* İstediğiniz boşluk miktarı */
+}

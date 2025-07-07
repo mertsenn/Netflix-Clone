@@ -1,0 +1,27 @@
+.error-message {
+  background-color: white;
+  color: black;
+}
+
+.trailer-modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 10000 !important;
+}
+
+.modal-content {
+  background: #000; /* Arka plan rengini istediğiniz renge ayarlayın */
+  width: 80vw; /* Görüntüleme alanının %80'i kadar genişlik */
+  height: 80vh; /* Görüntüleme alanının %80'i kadar yükseklik */
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+}

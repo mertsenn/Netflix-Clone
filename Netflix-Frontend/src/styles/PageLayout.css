@@ -1,0 +1,18 @@
+.page-container{
+    color:white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.banner-conteiner{
+    position: absolute;
+    z-index: 1;
+}
+
+.tv-series-movie-list-container{
+    position: relative;
+    top:-250px;
+    z-index: 2;
+}
+
+

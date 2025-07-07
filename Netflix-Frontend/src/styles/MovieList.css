@@ -1,0 +1,177 @@
+.movie-container {
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+  margin-bottom: 40px; /* MovieList'ler arası boşluk */
+}
+
+.movie-container:hover {
+  z-index: 1000; /* Hover yapılan container'ı en üste çıkar */
+}
+
+.movie-container-title {
+  margin-left: 20px;
+}
+
+.movie-list-container {
+  overflow-x: visible;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.movie-button-left,
+.movie-button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(33, 37, 42, 0.937);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 100%;
+  width: 4%;
+  z-index: 10;
+}
+
+.movie-button-left {
+  left: 0;
+}
+
+.movie-button-right {
+  right: 0;
+}
+
+.movie-button-left:hover,
+.movie-button-right:hover {
+  background-color: rgba(21, 22, 23, 0.614);
+}
+
+.movie-list {
+  display: flex;
+  overflow: visible;
+  scroll-behavior: smooth;
+  width: 100%;
+  list-style-type: none;
+  gap: 15px;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+  margin-left: 20px;
+  flex-wrap: nowrap;
+}
+
+.movie-list-item {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.movie-card {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: visible;
+  transition: all 0.3s ease;
+  z-index: 1;
+  display: flex;
+}
+
+.movie-poster {
+  width: 16.25em;
+  height: 100%;
+  transition: transform 0.2s;
+  display: block;
+  border-radius: 10px;
+}
+
+.movie-card:hover {
+  transform: scale(1.5);
+  transform-origin: center center;
+  z-index: 10;
+}
+
+.movie-info {
+  position: absolute;
+  top: 100%; /* Kartın altına yerleştir */
+  width: 100%;
+  height: 150px;
+  background: rgba(20, 20, 20, 0.987);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.movie-card:hover .movie-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.movie-info-elements {
+  margin-left: 20px;
+  font-size: 0.8em;
+}
+
+.watch-list-button {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  display: none;
+  background-color: rgba(13, 16, 18, 0.1);
+}
+
+.movie-card:hover .watch-list-button {
+  display: block;
+}
+
+.movie-info-icons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.movie-info-icons button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  background-color: rgba(13, 16, 18, 0.1);
+}
+
+.movie-info-icons button img {
+  width: 20px;
+  height: 20px;
+}
+
+.movie-info-icons button:hover {
+  transform: scale(1.1);
+}
+
+.movie-list-item:nth-child(1) .movie-card:hover {
+  transform-origin: left center;
+}
+
+.movie-list-item:last-child .movie-card:hover {
+  transform-origin: right center;
+}
