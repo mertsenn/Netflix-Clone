@@ -49,9 +49,7 @@ Netflix Clone/
 
 Feel free to open an issue or submit a pull request if you want to contribute!
 
-## 📃 License
 
-Distributed under the MIT License.
 
 Created by:  
 Mert Şen
